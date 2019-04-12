@@ -1,0 +1,23 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(181, 219, 211);
+    font-size: 2em;
+    color: white;
+}
+
+.swing-logo {
+    justify-self: flex-start;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white
+}
+
+.NavBar-link {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    justify-self: flex-end;
+}
+
