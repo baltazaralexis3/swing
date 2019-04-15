@@ -1,0 +1,25 @@
+.switch .lever {
+    background-color: #ff3d00
+}
+
+hr {
+    border: 1px solid #fff;
+}
+
+input {
+    color: #FFF
+}
+
+textarea {
+    background-color: #FFF;
+    height: 100px;
+    width: 500px;
+    color: grey;
+    border: none;
+    outline-color: #009688;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+    width: 100%;
+    
+}
