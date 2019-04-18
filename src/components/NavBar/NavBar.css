@@ -11,7 +11,9 @@
     font-weight: bold;
     margin-left: 20px;
     text-decoration: none;
-    color: white
+    color: white;
+    font-family: 'Baloo', cursive;
+    font-size: 2em
 }
 
 .NavBar-link {
@@ -21,3 +23,6 @@
     justify-self: flex-end;
 }
 
+.nav-wrapper {
+    font-size: 1.25em;
+}

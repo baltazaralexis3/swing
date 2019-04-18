@@ -9,6 +9,7 @@ import EntryForm from '../../components/EntryForm/EntryForm';
 //page import
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
+import WelcomePage from '../WelcomePage/WelcomePage';
 
 import userService from '../../utils/userService';
 
@@ -30,7 +31,17 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar/>
-        <EntryForm/>
+        <Switch>
+          <Route exact path='/' render={() =>
+            <WelcomePage/>
+          } />
+        </Switch>
+        <Switch>
+          <Route exact path='/moods' render={() =>
+            <EntryForm/>
+          } />
+        </Switch>
+        
         <Switch>
         <Route exact path='/login' render={() =>
           <LoginPage/>

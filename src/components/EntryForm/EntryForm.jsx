@@ -6,17 +6,18 @@ const EntryForm = (props) => {
 
 
     return(
-        <div className='container'>
+        <div className='container valign-wrapper'>
             <div className='row'>
-                <div className='col s10'> 
+                <div className='col s12 l8'> 
                     <div className='card-panel teal lighten-5'>
-                        <span className='white-text'>
+                        <span className='teal-text'>
                             <form className='entryForm'>
-                                <h2>New Entry</h2>  
+                                <h3>New Entry</h3> 
+                                
                                 {/* date */}
                                 <label>Today is</label>
                                 <div className="input-field inline">
-                                    <input type='date' />
+                                    <input type='date' className='datepicker'/>
                                 </div>
                                 <hr/>
                                 <br/>
@@ -29,7 +30,7 @@ const EntryForm = (props) => {
                                 <hr/>
                                 {/* meds */}
                                 <div >
-                                    <label>Took all doses of medication:</label>
+                                    <label>Took all medication:</label>
                                     <div className="input-field inline">
                                         <div className="switch">
                                             <label>
@@ -96,19 +97,23 @@ const EntryForm = (props) => {
                                                 
                                 <div>
                                     {/* patient comments */}
-                                    Notes:
+                                    <span className='notes-label'>Personal Notes:</span>
                                     <br/><br/>
 
                                     <textarea></textarea>
                                     <br/><br/>
                                     {/* doctor comments */}
-                                    Doctor Notes: 
+                                    <span className='notes-label'>Doctor Notes:</span>
                                     <br/>
                                     <label>Doctor Name</label>
                                     <div className="input-field inline">
                                         <input type='text'></input>
                                     </div>
                                     <textarea></textarea>
+                                    <br/><br/>
+                                </div>
+                                <div>
+                                    <button className="waves-effect waves-light btn" type="submit">Submit</button>
                                 </div>
                             </form>
                         </span>
