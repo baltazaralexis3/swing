@@ -9,10 +9,10 @@ const EntryForm = (props) => {
         <div className='container valign-wrapper'>
             <div className='row'>
                 <div className='col s12 l8'> 
-                    <div className='card-panel teal lighten-5'>
+                    <div className='card-panel teal lighten-5' id='entryCard'>
                         <span className='teal-text'>
                             <form className='entryForm'>
-                                <h3>New Entry</h3> 
+                                <h3>new entry</h3> 
                                 
                                 {/* date */}
                                 <label>Today is</label>
@@ -113,7 +113,7 @@ const EntryForm = (props) => {
                                     <br/><br/>
                                 </div>
                                 <div>
-                                    <button className="waves-effect waves-light btn" type="submit">Submit</button>
+                                    <button className="waves-effect waves-light btn" id='subBtn' type="submit">Submit</button>
                                 </div>
                             </form>
                         </span>

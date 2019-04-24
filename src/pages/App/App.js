@@ -52,7 +52,7 @@ class App extends Component {
         <Route exact path='/signup' render={({history}) =>
           <SignupPage
             history = {history}
-            // user={this.state.user}
+            user={this.state.user}
           />
         } />
         </Switch>
